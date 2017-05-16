@@ -1,0 +1,23 @@
+{
+  // By default, ESLint will look for configuratin files in all parent folders up to parent
+  // directory. So in case you have a config file in the parent dir, we define this is the
+  // root of the project, so that ESLint will not pick up any other config file.
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": 1
+  }
+}
